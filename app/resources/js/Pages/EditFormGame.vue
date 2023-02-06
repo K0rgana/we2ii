@@ -35,26 +35,37 @@ const updateGame = () => {
                         <div class="justify-between items-center">
                             <label>Name</label>
                             <TextInput
+                                type="text"
                                 class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                required
+                                autofocus
                                 v-model="form.name"
                             />
 
                             <label>Platform</label>
                             <TextInput
+                                type="text"
                                 class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                required
+                                autofocus
                                 v-model="form.platform"
                             />
 
                             <label>Genre</label>
                             <TextInput
+                                type="text"
                                 class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                required
+                                autofocus
                                 v-model="form.genre"
                             />
 
                             <label>Release</label>
-                            <p class="text-xs text-gray-500">Ex: yyyy-mm-dd</p>
                             <TextInput
+                                type="date"
                                 class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                required
+                                autofocus
                                 v-model="form.release"
                             />
                         </div>
